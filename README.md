@@ -7,7 +7,7 @@ An [octoDNS](https://github.com/octodns/octodns/) provider that targets [PowerDN
 #### Command line
 
 ```
-pip install octodns-powerdns
+pip install octodns-powerdnsmerge
 ```
 
 #### requirements.txt/setup.py
@@ -19,7 +19,7 @@ Pinning specific versions or SHAs is recommended to avoid unplanned upgrades.
 ```
 # Start with the latest versions and don't just copy what's here
 octodns==0.9.21
-octodns-powerdns==0.0.3
+octodns-powerdnsmerge==0.0.7
 requests==2.31.0
 ```
 
@@ -37,7 +37,7 @@ requests==2.31.0
 ```yaml
 providers:
   powerdns:
-      class: octodns_powerdns.PowerDnsProvider
+      class: octodns_powerdnsmerge.PowerDnsMergeProvider
       # The host on which PowerDNS api is listening (required)
       host: fqdn
       # The port on which PowerDNS api is listening (optional, default 8081)
