@@ -11,7 +11,7 @@ def descriptions():
 
 
 def version():
-    with open('octodns_powerdns/__init__.py') as fh:
+    with open('octodns_powerdnsmerge/__init__.py') as fh:
         for line in fh:
             if line.startswith('__version__'):
                 return line.split("'")[1]
@@ -42,11 +42,11 @@ setup(
         ),
         'test': tests_require,
     },
-    install_requires=('octodns>=0.9.17', 'requests>=2.26.0'),
+    install_requires=('octodns>=0.9.17', 'requests>=2.26.0', 'octodns-powerdns>=0.0.3'),
     license='MIT',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    name='octodns-powerdns',
+    name='octodns-powerdnsmerge',
     packages=find_packages(),
     python_requires='>=3.6',
     tests_require=tests_require,
